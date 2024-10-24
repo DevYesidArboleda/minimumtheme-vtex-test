@@ -1,0 +1,27 @@
+
+
+.sliderRightArrow--carousel,
+.sliderLeftArrow--carousel{
+    background: #e6e6e6 !important;
+    padding: 8px ;
+}
+
+.paginationDotsContainer--carousel {
+    bottom: -15px;
+}
+
+.paginationDot--carousel--isActive {
+    background: black;
+}
+
+.paginationDot--carousel{
+
+}
+
+.sliderTrack--carousel{
+    background: linear-gradient(to right, 
+                rgba(0, 0, 0, 0.5), /* Opacidad en la esquina izquierda */
+                rgba(0, 0, 0, 0) 30%, /* Transición hacia la transparencia */
+                rgba(0, 0, 0, 0) 70%, /* Centro totalmente transparente */
+                rgba(0, 0, 0, 0.5)); 
+}

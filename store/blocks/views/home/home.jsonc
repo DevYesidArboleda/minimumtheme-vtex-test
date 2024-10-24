@@ -1,0 +1,106 @@
+{
+  "store.home": { 
+    "blocks": [
+      "flex-layout.row#desktopTest",
+      "flex-layout.row#desktopTest",
+      "flex-layout.row#desktopTest",
+      "hello-react"
+    ]
+  }, 
+  "flex-layout.row#desktopTest": {
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#desktopTest"
+        ]
+    },
+    "flex-layout.col#desktopTest": {
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "blockClass": "carousel",
+            "fullWidth": true
+        },
+        "children": [
+            "rich-text#1",
+            "slider-layout#text-test"
+        ]
+    },
+  "slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "centerMode" : "center",
+      "centerModeSlidesGap" : "20"
+    },
+    "children": ["iframe", "iframe", "iframe"]
+  },
+  "video#videoOne": {
+    "props": {
+      "width": "200px",
+      "height": "100%",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/embed/r7QIubgnzt4",
+      "poster": "https://dummyimage.com/600x400/f0f0f0/fff",
+      "blockClass": "videoEl"
+    }
+  },
+
+  "video#videoTwo": {
+    "props": {
+      "width": "200px",
+      "height": "100%",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/embed/r7QIubgnzt4",
+      "poster": "https://dummyimage.com/600x400/f0f0f0/fff",
+      "blockClass": "videoEl"
+    }
+  },
+
+  "video#videoThree": {
+    "props": {
+      "width": "200px",
+      "height": "100%",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/embed/r7QIubgnzt4",
+      "poster": "https://dummyimage.com/600x400/f0f0f0/fff",
+      "blockClass": "videoEl"
+    }
+  },
+
+  "rich-text#1": {
+    "props": {
+      "text": "DESCUBRE LAS FUNCIONES DE My BMW APP EN VÍDEO",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "carousel"
+    }
+  }, 
+  "iframe": {
+    "props": {
+      "src": "https://www.youtube.com/embed/r7QIubgnzt4",
+      "width": "100%",
+      "height" : "500"
+    }
+  }
+}
