@@ -4,7 +4,9 @@
       "flex-layout.row#desktopTest",
       "flex-layout.row#desktopTest",
       "flex-layout.row#desktopTest",
-      "hello-react"
+      "hello-react",
+      "video-react",
+      "flex-layout.row#videoTest"
     ]
   }, 
   "flex-layout.row#desktopTest": {
@@ -44,7 +46,11 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel",
-      "centerMode" : "center",
+      "centerMode" : {
+        "desktop": "to-the-left",
+        "tablet" : "center",
+        "phone" : "disabled"
+      },
       "centerModeSlidesGap" : "20"
     },
     "children": ["iframe", "iframe", "iframe"]
@@ -102,5 +108,26 @@
       "width": "100%",
       "height" : "500"
     }
+  },
+  "flex-layout.row#videoTest": {
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": true,
+            "fullWidth": true,
+            "blockClass":"videoTest"
+        },
+        "children": [
+            "iframe#testVideo"
+        ]
+    },
+  "iframe#testVideo": {
+    "props": {
+      "src": "https://www.youtube.com/embed/r7QIubgnzt4",
+      "width": "100%",
+      "height" : "100%"
+    }
   }
+  
 }
